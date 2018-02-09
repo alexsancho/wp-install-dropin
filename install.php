@@ -176,10 +176,10 @@ function wp_install_defaults( int $user_id ) {
 	 * Create Default category.
 	 */
 	// Somehow translations won't work always. So check if Finnish was used.
-	$cat_name = ( get_option( 'WPLANG' ) == 'es' ) ? 'Sin categorizar' : __( 'Uncategorized' );
+	$cat_name = ( get_option( 'WPLANG' ) == 'es_ES' ) ? 'Sin categorizar' : __( 'Uncategorized' );
 
 	/* translators: Default category slug */
-	$cat_slug = sanitize_title( ( get_option( 'WPLANG' ) == 'es' ) ? 'sin-categorizar' : _x( 'Uncategorized', 'Default category slug' ) );
+	$cat_slug = sanitize_title( ( get_option( 'WPLANG' ) == 'es_ES' ) ? 'sin-categorizar' : _x( 'Uncategorized', 'Default category slug' ) );
 
 	if ( global_terms_enabled() ) {
 		$cat_id = $wpdb->get_var( $wpdb->prepare( "SELECT cat_ID FROM {$wpdb->sitecategories} WHERE category_nicename = %s", $cat_slug ) );
@@ -201,7 +201,7 @@ function wp_install_defaults( int $user_id ) {
 	 */
 	$id = wp_insert_post( [
 		// Somehow translations won't work always. So check if Finnish was used.
-		'post_title'   => ( get_option( 'WPLANG' ) == 'es' ) ? 'Portada' : __( 'Front page' ),
+		'post_title'   => ( get_option( 'WPLANG' ) == 'es_ES' ) ? 'Portada' : __( 'Front page' ),
 		'post_type'    => 'page',
 		'post_status'  => 'publish',
 		// Prefer empty content if someone forgets to change it.
