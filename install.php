@@ -5,9 +5,9 @@
  * Description: This dropin doesn't install bloat content like the default install.php and sets a few opionated wp options.
  * Author: Alex Sancho
  * Author URI: https://github.com/alexsancho
- * License: GPLv3
- * License URI: https://opensource.org/licenses/GPL-3.0
- * Version: 1.0
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
+ * Version: 1.0.0
  */
 
 /**
@@ -16,7 +16,7 @@
  * Runs the required functions to set up and populate the database,
  * including primary admin user and initial options.
  *
- * @since 2.1.0
+ * @since 1.0.0
  *
  * @param string $blog_title    Blog title.
  * @param string $user_name     User's username.
@@ -118,7 +118,7 @@ function wp_install(
  * Adds the default "Uncategorized" category, the first post (with comment),
  * first page, and default widgets for default theme for the current version.
  *
- * @since 2.1.0
+ * @since 1.0.0
  *
  * @param int $user_id User ID.
  */
