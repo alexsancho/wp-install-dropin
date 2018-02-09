@@ -43,13 +43,13 @@ function wp_install(
 	populate_options();
 	populate_roles();
 
-	// Use language from installer or env WPLANG or default to 'fi'.
+	// Use language from installer or env WPLANG or default to 'es_ES'.
 	if ( ! empty( $language ) ) {
 		update_option( 'WPLANG', $language );
 	} elseif ( ! empty( getenv( 'WPLANG' ) ) ) {
 		update_option( 'WPLANG', getenv( 'WPLANG' ) );
 	} else {
-		update_option( 'WPLANG', 'es' );
+		update_option( 'WPLANG', 'es_ES' );
 	}
 
 	update_option( 'blogname', $blog_title );
@@ -237,4 +237,3 @@ function wp_install_defaults( int $user_id ) {
 	 */
 	update_user_meta( $user_id, 'show_welcome_panel', 0 );
 }
-
