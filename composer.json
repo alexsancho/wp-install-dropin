@@ -1,0 +1,23 @@
+{
+  "name": "alexsancho/wp-install-dropin",
+  "type": "wordpress-dropin",
+  "license": "GPL-3.0+",
+  "description": "Better WordPress installer.php dropin.",
+  "homepage": "https://github.com/alexsancho/wp-install-dropin",
+  "authors": [
+    {
+      "name": "Alex Sancho",
+      "email": "alex@alexsancho.name",
+      "homepage": "https://github.com/onnimonni",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress","wp","installer","dropin","clean"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "roave/security-advisories": "dev-master",
+    "koodimonni/composer-dropin-installer": ">=1.0.1"
+  }
+}
