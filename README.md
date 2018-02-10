@@ -1,4 +1,5 @@
 # WP Dropin: Better install.php
+[![Build Status](https://travis-ci.org/alexsancho/wp-install-dropin.svg?branch=master)](https://travis-ci.org/alexsancho/wp-install-dropin)
 
 This `install.php` dropin doesn't install bloat from default install.php and sets a few opionated wp options.
 
